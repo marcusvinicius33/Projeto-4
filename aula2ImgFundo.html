@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Personalização dos Fundos.</title>
+    <style>
+        body {
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+            /*imagem tirada da internet*/
+            background-size: 200px;
+            background-repeat: repeat-y;
+            background-position: center center;
+        }
+        /*Com a propriedade  background-repeat é possivel repetir a imagem, nesse caso,repeat-y, se repete verticalmente.
+        Já o repeat-x, repete a imagem horizontalmente.
+        a opção no-repeat, não repete a imagem.
+        Por padrão o  background-image sempre repetirar as imagens. */
+
+        div.quadrado {
+            background-position: center center;
+            background-image: url(img/pattern003.png);
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+            background-position: center center;
+        }
+
+        div#q1 {
+            background-color: skyblue;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="quadrado" id="q1"></div>
+
 </body>
+
 </html>
