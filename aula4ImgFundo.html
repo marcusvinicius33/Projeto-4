@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Fundo de tela fixo </title>
     <style>
         body {
             height: 100vh;
@@ -12,7 +12,24 @@
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover; /*O  background-size pode usar dois valores  escritos, mas tbm pode ser 'auto' automático; 'contain', que dar a ordem pra imagem ser 100% exibida, sem cortes; e o 'cover' que dar a ordem de cobrir a tela inteira, mesmo que para isso tenha que fazer algum corte na imagem. */
+            background-attachment: fixed; /*O background-attachment, ou vínculo em portugues, permite que mesmo ao rolar o texto a imagem permanessa fixa no fundo da tela.
+            Tendo duas opções de comando, a padrão que é a 'scroll', que faz com que o fundo role junto com o conteúdo do texto; e a 'fixet',que deixa fixa a imagem de fundo, mesmo quando o texto está sendo rolado.*/
 
+            /*Shorthand do Background: É a forma abreviada de fazer varios comandos do Background utilizando uma unica declaração.
+            Seguindo sempre os passos abaixo.
+
+            Background: Color> Image> position> repeat> 
+            [size]> attachment. 
+
+            Utilizando o exemplo acima, a declaração fica desse jeito: 
+
+            Background: black url(img/wallpaper002.jpg) center center no-repeat cover fixed;
+
+            Obs. Não utilizando virgulas. 
+            Obs. Na pratica, o size, não funciona no Shorthand, sendo necessario acrescentar essa declaração posteriormente. 
+            */
+
+ 
         }
         main {
             background-color: white;
